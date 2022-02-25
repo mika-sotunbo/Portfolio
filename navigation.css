@@ -1,0 +1,254 @@
+/* Entire body styling */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+/* Navigation styling */
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+/* for the nav links */
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 0px 10px 0px 10px;
+    /* border: 2px solid blue; */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke
+}
+
+nav ul {
+    text-align: right;
+}
+
+.navigator {
+    padding: 10px;
+    background: linear-gradient(to right, #0F1F38, white, #0F1F38, #0F1F38, #0F1F38, #0F1F38);
+}
+
+nav ul li a:hover {
+    color: silver;
+}
+
+
+/* Welcome section styling or About */
+
+#welcome-section {
+    background-image: url('mikaaa.jpg');
+    background-size: contain;
+    height: 100vh;
+    background-repeat: repeat;
+    background-blend-mode: overlay;
+    background-color: #0F1F38;
+}
+
+.banner-txt {
+    text-align: center;
+    color: rgb(250, 250, 260);
+    font-size: 1.5rem;
+    padding-top: 6em;
+}
+
+.skills{
+    display: none;
+}
+.skill-btn{
+    padding: 1rem;
+    border-radius:1px;
+    background-color: #0F1F80;
+    color:rgb(250, 250, 260);
+    background: inherit;
+    font-size: 1em;
+    font-family: 'Poppins', monospace;
+    height: 5em;
+    width: 10em;
+    margin-top: 5em;
+}
+/* Projects section styling */
+
+.projects-section {
+    text-align: center;
+    padding: 5rem 2rem;
+    /* background-image: url('logo.jpg'); */
+}
+
+.projects-section h2 {
+    padding-top: 0.11em;
+    margin-top: 1%;
+}
+
+.projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid white;
+    border-top: 0.2rem solid white;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 28.75em) {
+    .projects-section-header {
+        font-size: 4rem;
+    }
+}
+
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.project-title {
+    text-align: center;
+}
+
+.project-title a {
+    color: white;
+}
+
+#projects {
+    /* background: #000616; */
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    background-image: url('logo.jpg');
+    background-size: contain;
+    height: 100%;
+    background-repeat: repeat;
+    background-blend-mode: overlay;
+    background-color: #0F1F38;
+}
+
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+    transition: width 3s;
+    transition-timing-function: ease-in;
+}
+
+.project-image:hover {
+    width: 200px;
+}
+
+.project-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+}
+
+
+/* For the Buttons*/
+
+.btn {
+    display: inline-block;
+    /* or display: flex; */
+    /* justify-content: center; */
+    padding: 1rem 2rem;
+    border-radius: 12px;
+}
+
+.btn-show-all {
+    font-size: 2rem;
+    background: whitesmoke;
+    color: #0F1F38;
+    transition: background 0.5s ease-out;
+}
+
+.btn-show-all:hover {
+    background: #0F1F80;
+}
+
+.btn-show-all:hover>i {
+    transform: translateX(12px);
+}
+
+.btn-show-all>i {
+    margin-left: 30px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+}
+
+
+/*Contacts SEction*/
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    /*     justify-content: center; */
+    align-items: center;
+    text-align: center;
+    /* width: 10; */
+    height: 80vh;
+    background-image: url('wallsign.jpg');
+    background-blend-mode: overlay;
+    background-color: #0F1F38;
+    background-repeat: repeat;
+    background-size: contain;
+    /* padding: 0 2rem; */
+    /* background: linear-gradient(to bottom right, var(--blue), whitesmoke); */
+    border-radius: 12px;
+    color: white;
+}
+
+.contact-section-header>h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+@media (max-width: 28.75em) {
+    .contact-section-header>h2 {
+        font-size: 4rem;
+    }
+}
+
+.contact-section-header>p {
+    font-size: 2rem;
+    color: white;
+    font-style: italic;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.contact-details {
+    font-size: 1rem;
+    text-shadow: 2px 2px 1px black;
+    transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+    transform: translateY(8px);
+}
+
+.contact-details {
+    font-size: 1rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+    color: white;
+}
+
+.contact-details:hover {
+    transform: translateY(8px);
+}
